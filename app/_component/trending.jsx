@@ -47,10 +47,10 @@ const notifications = [
 ]
 function Trending() {
   return (
-      <Card className='w-[300px]'>
+      <Card className='w-[300px] hidden md:block'>
       <CardHeader>
         <CardTitle>Trending</CardTitle>
-        <CardDescription>Market 50<PercentIcon/> Bear 50<PercentIcon/><GiBull /> </CardDescription>
+        <CardDescription>Market Looks Green</CardDescription>
       </CardHeader>
       <CardContent className="grid gap-4">
         <div className=" flex items-center space-x-4 rounded-md border p-4">

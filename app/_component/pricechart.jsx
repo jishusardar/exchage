@@ -47,7 +47,7 @@ const notifications = [
 ]
 function Pricechart() {
   return (
-      <Card className='w-[300px]'>
+      <Card className='w-[300px] hidden md:block'>
       <CardHeader>
         <CardTitle>Price Charts</CardTitle>
         <CardDescription>Market is bullish now<GiBull /> </CardDescription>

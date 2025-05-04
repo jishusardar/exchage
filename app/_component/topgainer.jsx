@@ -47,7 +47,7 @@ const notifications = [
 ]
 function Topgainer() {
   return (
-      <Card className='w-[300px]'>
+      <Card className='w-[300px] hidden md:block'>
       <CardHeader>
         <CardTitle>Top Perfomers</CardTitle>
         <CardDescription>Todays Top Performer</CardDescription>
