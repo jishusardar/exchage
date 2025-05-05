@@ -4,6 +4,7 @@ import { UserButton, useUser } from '@clerk/nextjs'
 import Topgainer, { HoverEffect } from './topgainer';
 import Pricechart from './pricechart';
 import Trending from './trending';
+import { Mobilerotm } from './rotm';
 
 function Hero() {
   const {user,isSignedIn}=useUser();
@@ -48,6 +49,7 @@ function Hero() {
   </div>
 </section>
 <div className='flex justify-center gap-10'>
+  <Mobilerotm/>
   <Topgainer/>
 <Pricechart/>
 <Trending/>

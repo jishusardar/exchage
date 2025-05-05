@@ -10,6 +10,7 @@ import { api } from "@/convex/_generated/api";
 import { createElement, useEffect, useState } from "react";
 import axios from "axios";
 import { toast } from "sonner";
+import { Headerres } from "./_component/temheader";
 
 export default function Home() {
   const {user}=useUser();
@@ -26,24 +27,10 @@ export default function Home() {
       userName:user?.fullName
     });
     console.log(result);
-  }
-
-  const [coins,setCoins]=useState([]);
-    useEffect(()=>{
-        axios
-        .get("https://pro-api.coingecko.com/api/v3/coins/top_gainers_losers?duration=24h&top_coins=300")
-        .then((response)=>{
-            console.log("Response>>",response)
-        })
-        .catch((error)=>{
-            console.log("Error Occured",error)
-        });
-    },[]);
+  };
   return (
     <div>
-      <Header/>
-      <Hero/>
-      <Footer/>
+      <Headerres/>
     </div>
   );
 }
