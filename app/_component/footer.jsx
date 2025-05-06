@@ -15,10 +15,10 @@ function Footer() {
           <span className="hidden h-1 w-10 rounded-sm bg-indigo-500 lg:block"></span>
 
           <div>
-            <h2 className="text-2xl font-medium text-gray-900 dark:text-white">Request a Demo</h2>
+            <h2 className="text-2xl font-medium text-gray-900 dark:text-white">Sign Up Now</h2>
 
             <p className="mt-4 max-w-lg text-gray-500 dark:text-gray-400">
-              Try A Demo At Free of Cost
+              Experience something new
             </p>
           </div>
 
@@ -31,7 +31,7 @@ function Footer() {
               <input
                 type="email"
                 id="UserEmail"
-                placeholder="john@rhcp.com"
+                placeholder="jishusardar01@gmail.com"
                 className="w-full border-none focus:border-transparent focus:ring-transparent sm:text-sm dark:bg-gray-900 dark:text-white"
               />
 
@@ -149,7 +149,7 @@ function Footer() {
           </ul>
 
           <p className="mt-8 text-xs text-gray-500 dark:text-gray-400">
-            &copy; 2025. Anion Exchange . All rights reserved.
+            &copy; 2025. Anion Exchange made by Tushar Show And Jishu Sardar
           </p>
         </div>
       </div>
