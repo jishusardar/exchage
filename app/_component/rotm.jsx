@@ -30,7 +30,7 @@ const Icons = {
 
 export function Mobilerotm() {
   return (
-    <div className="lg:hidden md:hidden">
+    
     <div className="relative flex size-full max-w-lg items-center justify-center overflow-hidden rounded-lg border bg-background">
       <IconCloud
         icons={[
@@ -60,7 +60,6 @@ export function Mobilerotm() {
           <Icons.Litecoin key="Litecoin4" />,
         ]}
       />
-    </div>
     </div>
   );
 }

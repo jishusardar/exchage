@@ -49,7 +49,9 @@ function Hero() {
   </div>
 </section>
 <div className='flex justify-center gap-10'>
+<div className="lg:hidden md:hidden">
   <Mobilerotm/>
+  </div>
   <Topgainer/>
 <Pricechart/>
 <Trending/>

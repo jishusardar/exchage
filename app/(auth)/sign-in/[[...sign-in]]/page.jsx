@@ -1,16 +1,31 @@
-import { SignIn, SignInButton } from '@clerk/nextjs'
+import { GalleryVerticalEnd } from "lucide-react"
+import { SignIn } from "@clerk/nextjs";
 
-export default function Page() {
+export default function LoginPage() {
   return (
-  <section className="overflow-hidden bg-gray-50 sm:grid sm:grid-cols-2 sm:items-center dark:bg-gray-900">
-    <div className="p-8 md:p-12 lg:px-16 lg:py-24">
-      <SignIn/>
+    <div className="grid min-h-svh lg:grid-cols-2">
+      <div className="flex flex-col gap-4 p-6 md:p-10">
+        <div className="flex justify-center gap-2 md:justify-start">
+          <a href="#" className="flex items-center gap-2 font-medium">
+            <div
+              className="bg-primary text-primary-foreground flex size-6 items-center justify-center rounded-md">
+              <GalleryVerticalEnd className="size-4" />
+            </div>
+            Welcome To Anion Exchange
+          </a>
+        </div>
+        <div className="flex flex-1 items-center justify-center">
+          <div className="w-full max-w-xs">
+            <SignIn/>
+          </div>
+        </div>
+      </div>
+      <div className="bg-muted relative hidden lg:block">
+        <img
+          src="/signinback.jpg"
+          alt="Image"
+          className="absolute inset-0 h-full w-full object-cover dark:brightness-[0.2] dark:grayscale" />
+      </div>
     </div>
-  
-    <img
-      alt=""
-      src="https://images.pexels.com/photos/844124/pexels-photo-844124.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-      className="h-full w-full object-cover sm:h-[calc(100%_-_2rem)] sm:self-end sm:rounded-ss-[30px] md:h-[calc(100%_-_4rem)] md:rounded-ss-[60px]"
-    />
-  </section>)
+  );
 }
