@@ -1,16 +1,22 @@
 "use client";
 import React, { useState } from "react";
 import { Sidebar,SidebarBody,SidebarLink } from "@/components/ui/sidebar";
+import {
+  IconArrowLeft,
+  IconBrandTabler,
+  IconSettings,
+  IconUserBolt,
+} from "@tabler/icons-react";
 import { motion } from "motion/react";
 import { cn } from "@/lib/utils";
 import { UserButton } from "@clerk/nextjs";
-import DashBoardContent from "./dashboardcontent";
+import TransactionHistoryContent from "./contentHistory";
 import { HomeIcon } from "lucide-react";
 import { SiMarketo } from "react-icons/si";
 import { FaHistory } from "react-icons/fa";
 import { IoMdExit } from "react-icons/io";
 
-export function SidebarDash() {
+export function SidebarTransactionHistory() {
   const links = [
     {
       label: "Dashboard",
@@ -64,7 +70,7 @@ export function SidebarDash() {
           </div>
         </SidebarBody>
       </Sidebar>
-      <DashBoardContent />
+      <TransactionHistoryContent/>
     </div>
   );
 }

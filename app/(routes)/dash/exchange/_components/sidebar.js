@@ -4,13 +4,13 @@ import { Sidebar,SidebarBody,SidebarLink } from "@/components/ui/sidebar";
 import { motion } from "motion/react";
 import { cn } from "@/lib/utils";
 import { UserButton } from "@clerk/nextjs";
-import DashBoardContent from "./dashboardcontent";
+import ExchnagePage from "./exchangepage";
 import { HomeIcon } from "lucide-react";
 import { SiMarketo } from "react-icons/si";
 import { FaHistory } from "react-icons/fa";
 import { IoMdExit } from "react-icons/io";
 
-export function SidebarDash() {
+export function SidebarExchange() {
   const links = [
     {
       label: "Dashboard",
@@ -64,7 +64,7 @@ export function SidebarDash() {
           </div>
         </SidebarBody>
       </Sidebar>
-      <DashBoardContent />
+      <ExchnagePage/>
     </div>
   );
 }
